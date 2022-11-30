@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:untitled/screens/shared/custom_text.dart';
 
 class FirstScreen extends StatefulWidget {
   const FirstScreen({super.key});
@@ -40,7 +41,7 @@ class _FirstScreenState extends State<FirstScreen> {
                         offset: const Offset(0, 16),
                         spreadRadius: -9)],),
                 child: Center(
-                  child: Text('Panel Calculator gfdg',
+                  child: Text('Panel Calculator',
                     style:
                     GoogleFonts.poppins(
                       textStyle: const TextStyle(color: Color(0xff023047), letterSpacing: .5,
@@ -49,19 +50,19 @@ class _FirstScreenState extends State<FirstScreen> {
                   ),
                 ),),
               const SizedBox(height: 28,),
-              myText('Electricity Consumption in KWh'),
+              const CustomText(text: 'Electricity Consumption in KWh'),
               const SizedBox(height: 11,),
               myTextField('KWh',kwhController),
               const SizedBox(height: 16,),
-              myText('Peak sun hours per day'),
+              const CustomText(text: 'Peak sun hours per day'),
               const SizedBox(height: 11,),
               myTextField('hrs.per day',hourPerDayController),
               const SizedBox(height: 16,),
-              myText('Power of the used panels'),
+              const CustomText(text: 'Power of the used panels'),
               const SizedBox(height: 11,),
               myTextField('W',powerOfUsedController),
               const SizedBox(height: 16,),
-              myText('Efficiency of the Solar Panels'),
+              const CustomText(text: 'Efficiency of the Solar Panels'),
               const SizedBox(height: 11,),
               myTextField('%',effiOfSolarController),
               const SizedBox(height: 31,),
@@ -102,16 +103,6 @@ class _FirstScreenState extends State<FirstScreen> {
               Text(displayMsg)
             ]),
       ),
-    );
-  }
-
-  myText(cusText){
-    return Container(
-      margin: const EdgeInsets.only(left: 44),
-      alignment: Alignment.centerLeft,
-      child: Text(cusText, style:GoogleFonts.poppins(
-          textStyle:  const TextStyle(color: Color(0xff023047),
-              fontWeight: FontWeight.w600,fontSize: 14)),),
     );
   }
 
