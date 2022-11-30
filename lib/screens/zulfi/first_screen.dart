@@ -40,7 +40,7 @@ class _FirstScreenState extends State<FirstScreen> {
                         offset: const Offset(0, 16),
                         spreadRadius: -9)],),
                 child: Center(
-                  child: Text('Panel Calculator',
+                  child: Text('Panel Calculator gfdg',
                     style:
                     GoogleFonts.poppins(
                       textStyle: const TextStyle(color: Color(0xff023047), letterSpacing: .5,
