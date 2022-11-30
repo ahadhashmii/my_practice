@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/screens/splash/splash_screen.dart';
-import 'package:untitled/screens/zulfi/first_screen.dart';
+import 'package:untitled/screens/login/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: const FirstScreen(),
+      home: const LoginScreen(),
     );
   }
 }

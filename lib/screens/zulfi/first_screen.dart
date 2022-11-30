@@ -38,8 +38,11 @@ class _FirstScreenState extends State<FirstScreen> {
                   // borderRadius: BorderRadius.circular(7),
                   boxShadow: [
                     BoxShadow(color: const Color(0xfffb8500).withOpacity(.2),
-                        offset: const Offset(0, 16),
-                        spreadRadius: -9)],),
+                      offset: const Offset(0, 16),
+                      spreadRadius: -9
+                    )
+                  ],
+                ),
                 child: Center(
                   child: Text('Panel Calculator',
                     style:
